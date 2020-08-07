@@ -3,14 +3,23 @@
 ## Pre-Requisites
 
 * Install [meta](https://github.com/mateodelnorte/meta#readme).
+* Ensure direnv/.envrc is enabled on target machine
 * Clone the current repository.
 * OPTIONAL if using vscode: Ensure 'gitlens' is installed
 
 ## Setup
 
+## Required
+
 Run ``meta git update``.  This will initialize the current meta repository cloning all other repositories required.
 
-Initialize gitlens view of all sub repositories in vscode.  In vscode from top level directory in a terminal, add each of the meta_repos/* to the current workspace and save this workspace file locally!  To add a single directory type ``code add <PATH TO SUB REPO>``.  For more information see [vscode documentation](https://code.visualstudio.com/docs/editor/command-line)
+Ensure [direnv](https://direnv.net) is installed and configured for the current environment.
+
+Ensure git 'paging' is turned off for the current environment.  See [here](https://stackoverflow.com/questions/2183900/how-do-i-prevent-git-diff-from-using-a-pager) for more information.  The "export GIT_PAGER=cat" has been added to the .envrc file to enable this across all git commands.
+
+### Optional
+
+For vscode, initialize the gitlens view for all sub repositories.  In vscode from top level directory in a terminal, add each of the meta_repos/* to the current workspace and save this workspace file locally!  To add a single directory type ``code add <PATH TO SUB REPO>``.  For more information see [vscode documentation](https://code.visualstudio.com/docs/editor/command-line).  To save effort, a vscode workspace file has also been included in the project.
 
 # Appendix
 
@@ -30,10 +39,9 @@ meta git push origin gavindidrichsen/myfeature
 
 ### Tag all repositories
 
-List all git tags--NOTE the "GIT_PAGER=cat" turns of 'paging' of tag list for each repository.  See [here](https://stackoverflow.com/questions/2183900/how-do-i-prevent-git-diff-from-using-a-pager) for more information.
-
+List all git tags.
 ```bash
-➜  dummy-meta git:(master) ✗ GIT_PAGER=cat meta git tag --list
+➜  dummy-meta git:(master) ✗ meta git tag --list
 
 /Users/gavindidrichsen/Documents/@REFERENCE/git/meta/example/dummy-meta:
 v1.4
@@ -46,7 +54,7 @@ meta_repos/dummy-sub-1 ✓
 meta_repos/dummy-sub-2:
 v1.4
 meta_repos/dummy-sub-2 ✓
-➜  dummy-meta git:(master) ✗ 
+➜  dummy-meta git:(master) ✗
 ```
 
 
