@@ -5,7 +5,13 @@
 * Install [meta](https://github.com/mateodelnorte/meta#readme).
 * Clone the current repository.
 
-## Usage
+## Setup
+
+Run ``meta git update``.  This will initialize the current meta repository cloning all other repositories required.
+
+# Appendix
+
+## Detailed meta initialization
 
 Before initializing the current meta repository, the directory structure will look something like:
 
@@ -19,7 +25,7 @@ Before initializing the current meta repository, the directory structure will lo
 ➜  tmp git:(master) ✗
 ```
 
-However, after running ``meta git update``, which  all of the other repositories required for the meta project will also be included.  For example:
+However, after running ``meta git update``, all repositories required for the meta project will also be cloned.  For example:
 
 ```bash
 ➜  dummy-meta git:(master) meta git update
