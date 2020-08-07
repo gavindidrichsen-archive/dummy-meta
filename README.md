@@ -3,11 +3,11 @@
 ## Pre-Requisites
 
 * Install [meta](https://github.com/mateodelnorte/meta#readme).
-* Clone the current repository
+* Clone the current repository.
 
 ## Usage
 
-Before using initializing the meta project, the structure will look something like:
+Before initializing the current meta repository, the directory structure will look something like:
 
 ```bash
 ➜  dummy-meta git:(master) tree .
@@ -19,7 +19,7 @@ Before using initializing the meta project, the structure will look something li
 ➜  tmp git:(master) ✗
 ```
 
-After running ``meta git update``, all of the other repositories required for the meta project will also be included.  For example:
+However, after running ``meta git update``, which  all of the other repositories required for the meta project will also be included.  For example:
 
 ```bash
 ➜  dummy-meta git:(master) meta git update
