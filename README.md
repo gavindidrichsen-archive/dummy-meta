@@ -19,13 +19,7 @@ Ensure git 'paging' is turned off for the current environment.  See [here](https
 
 ### Optional
 
-For vscode, initialize the gitlens view for all sub repositories.  In vscode from top level directory in a terminal, add each of the meta_repos/* to the current workspace and save this workspace file locally!  To add a single directory type ``code add <PATH TO SUB REPO>``.  For more information see [vscode documentation](https://code.visualstudio.com/docs/editor/command-line).  To save effort, a vscode workspace file has also been included in the project.
-
-Add all the sub-folders to the current workspace:
-
-![add to workspace](img/add_folder_to_workspace.png)
-
-![adding the folders](img/add_folders.png)
+If using vscode, open the workspace at the root directory ``code dummy-meta.code-workspace``.  This will automatically display the sub-repositories.  All sub-repositories should now be visible.  The 'gitlens' extension will show any changes in the sub-repositories.  See the Appendix for how to add new sub-repositories to the current workspace
 
 # Appendix
 
@@ -63,6 +57,13 @@ meta_repos/dummy-sub-2 ✓
 ➜  dummy-meta git:(master) ✗
 ```
 
+## How to add sub-repositories to the vscode workspace
+
+In vscode from top level directory in a terminal, add all the sub-folders to the current workspace:
+
+![add to workspace](img/add_folder_to_workspace.png)
+
+![adding the folders](img/add_folders.png)
 
 ## Detailed meta initialization
 
