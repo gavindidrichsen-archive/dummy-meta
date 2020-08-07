@@ -4,12 +4,51 @@
 
 * Install [meta](https://github.com/mateodelnorte/meta#readme).
 * Clone the current repository.
+* OPTIONAL if using vscode: Ensure 'gitlens' is installed
 
 ## Setup
 
 Run ``meta git update``.  This will initialize the current meta repository cloning all other repositories required.
 
+Initialize gitlens view of all sub repositories in vscode.  In vscode from top level directory in a terminal, add each of the meta_repos/* to the current workspace and save this workspace file locally!  To add a single directory type ``code add <PATH TO SUB REPO>``.  For more information see [vscode documentation](https://code.visualstudio.com/docs/editor/command-line)
+
 # Appendix
+
+## Common meta commands
+
+### Create new local/remote branch
+
+To do this across all repositories, parent and sub-repositories:
+
+```bash
+meta git checkout -b gavindidrichsen/myfeature
+# NOTE: if you don't want the branch on the parent repository,
+# make sure to return to 'master' and delete the 'gavindidrichsen/myfeature' branch
+# before doing the next step
+meta git push origin gavindidrichsen/myfeature
+```
+
+### Tag all repositories
+
+List all git tags--NOTE the "GIT_PAGER=cat" turns of 'paging' of tag list for each repository.  See [here](https://stackoverflow.com/questions/2183900/how-do-i-prevent-git-diff-from-using-a-pager) for more information.
+
+```bash
+➜  dummy-meta git:(master) ✗ GIT_PAGER=cat meta git tag --list
+
+/Users/gavindidrichsen/Documents/@REFERENCE/git/meta/example/dummy-meta:
+v1.4
+/Users/gavindidrichsen/Documents/@REFERENCE/git/meta/example/dummy-meta ✓
+
+meta_repos/dummy-sub-1:
+v1.4
+meta_repos/dummy-sub-1 ✓
+
+meta_repos/dummy-sub-2:
+v1.4
+meta_repos/dummy-sub-2 ✓
+➜  dummy-meta git:(master) ✗ 
+```
+
 
 ## Detailed meta initialization
 
