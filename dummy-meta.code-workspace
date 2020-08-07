@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "meta_repos/dummy-sub-1"
+		},
+		{
+			"path": "meta_repos/dummy-sub-2"
+		}
+	],
+	"settings": {}
+}
