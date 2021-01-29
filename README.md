@@ -123,5 +123,3 @@ So that the new directory structure will look something like this:
 
 3 directories, 3 files
 ```
-
-Add this dummy line
