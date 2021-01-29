@@ -1,4 +1,4 @@
-# dummy-meta HARRY
+# dummy-meta
 
 ## Pre-Requisites
 
