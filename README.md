@@ -1,4 +1,4 @@
-# dummy-meta BOB
+# dummy-meta
 
 ## Pre-Requisites
 
