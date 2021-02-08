@@ -1,6 +1,6 @@
 {
   "projects": {
-    "meta_repos/dummy-sub-1": "https://github.com/gavindidrichsen/dummy-sub-1.git",
-    "meta_repos/dummy-sub-2": "https://github.com/gavindidrichsen/dummy-sub-2.git"
+    "meta_repos/dummy-sub-1": "https://github.com/gavindidrichsen-archive/dummy-sub-1.git",
+    "meta_repos/dummy-sub-2": "https://github.com/gavindidrichsen-archive/dummy-sub-2.git"
   }
 }
